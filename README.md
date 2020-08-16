@@ -37,10 +37,10 @@ Navigation & safeargs 를 써보고 구현해보는 좋은 프로젝트 였던 �
 생각되었고, 역시 개발에서 새로운 기술에 대한 공부는 중요하고 재밌다고 느낄 수 있는 시간이었습니다.
 
 ## 참고 ##
-Dagger-hilt 참고 Git : https://github.com/iambaljeet/JetPackHiltDemo
+Dagger-hilt 참고 Git : https://github.com/iambaljeet/JetPackHiltDemo                                                                                               
 Dagger-hilt Google Docs : https://developer.android.com/training/dependency-injection/hilt-android?hl=ko
 
 Navigation Google Docs : https://developer.android.com/guide/navigation/navigation-pass-data
 
-DiffUtil 참고 Blog : https://blog.kmshack.kr/RecyclerView-DiffUtil%EB%A1%9C-%EC%84%B1%EB%8A%A5-%ED%96%A5%EC%83%81%ED%95%98%EA%B8%B0/
+DiffUtil 참고 Blog : https://blog.kmshack.kr/RecyclerView-DiffUtil%EB%A1%9C-%EC%84%B1%EB%8A%A5-%ED%96%A5%EC%83%81%ED%95%98%EA%B8%B0/                                           
 DiffUtil Google Docs : https://developer.android.com/reference/androidx/recyclerview/widget/DiffUtil
