@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.kun.kakaopayassignment.model.data.BookDocument" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bookItemLayout"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/bookImg"
+                setImage="@{item.thumbnail}"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_margin="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/ic_launcher_background" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/bookTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="@{item.title}"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@id/bookAuthors"
+                app:layout_constraintStart_toEndOf="@id/bookImg"
+                app:layout_constraintTop_toTopOf="@id/bookImg" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/bookAuthors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="@{item.getAuthor}"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/bookImg" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/bookContent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:ellipsize="end"
+                android:lines="4"
+                android:maxLines="4"
+                android:text="@{item.getContent}"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@id/bookImg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/bookImg"
+                app:layout_constraintTop_toBottomOf="@id/bookTitle"
+                tools:text="오쿠다 히데오가 들려주는 유쾌한 가족 이야기『오 해피 데이』. 일상으로부터 탈출을 꿈꾸는 여섯 남녀와 그들의 가족 이야기를 따뜻하게 그려낸 소설이다. 옴니버스 형식으로 구성된 여섯 편의 이야기 속에 실제로 있을 법한 생생한 캐릭터들을 등장시켜, 그들이 가족과 벌이는 소소하지만 흥미로운 이야기들을 펼쳐놓는다.  마흔 두 살의 전업주부 노리코는 물건을 처분하는 짜릿한 기쁨을 느끼며 옥션에 점점 빠져든다. 서른여덟 살의 직장인 마사하루는 갈등 끝에 아내가" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</layout>

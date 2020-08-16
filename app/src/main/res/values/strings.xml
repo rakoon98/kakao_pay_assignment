@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KakaoPayAssignment</string>
+    <string name="search_book_hint">검색할 책 이름을 입력해주세요</string>
+    <string name="search_book_description_title">책소개</string>
+    <string name="search_book_move_web">웹에서 보기</string>
+
+    <string name="search_book_result_text">&quot;%s&quot; 검색에 대한 결과 %s개</string>
+</resources>

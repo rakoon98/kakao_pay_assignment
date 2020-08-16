@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_list">
+    <fragment
+        android:id="@+id/fragment_list"
+        android:name="com.kun.kakaopayassignment.views.list.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            android:id="@+id/action_list_to_detail"
+            app:destination="@id/fragment_detail" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_detail"
+        android:name="com.kun.kakaopayassignment.views.detail.DetailBookFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_book_detail" >
+        <argument
+            android:name="bookItem"
+            android:defaultValue="@null"
+            app:nullable="true"
+            app:argType="com.kun.kakaopayassignment.model.data.BookDocument"/>
+    </fragment>
+</navigation>
